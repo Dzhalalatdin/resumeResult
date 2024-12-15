@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+a {
+  display: inline-block;
+
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #debeff;
+
+  transition: 0.2s ease;
+}
+
+a:hover {
+  background-color: #a6ffb5;
+  border-color: #73d59a;
+}
+
+img {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #333333;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 10px;
+  border: #a6ffb5 3px solid;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: #a6ffb5;
+  border-color: #73d59a;
+}
+
+button:visited {
+  color: #73d59a;
+}
+
+button:active {
+  background-color: #73d59a;
+  border-color: #5eb480;
+}
+
+img {
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  display: block;
+  margin-bottom: 30px;
+  border: #333333 2px solid;
+  padding: 2px;
+}
+
+textarea {
+  max-width: 300px;
+  max-height: 100px;
+  border: #333333 2px solid;
+  border-radius: 10px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.header {
+  position: sticky;
+  text-align: center;
+  top: 0;
+  left: 0;
+  padding: 5px 20px;
+  background-color: #eeeeff;
+}
+
+.profile {
+  /* margin-top: 100px; */
+}
+
+.profile__wrapper {
+  background-color: #a6b3ff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile__item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hobby__wrapper {
+  background-color: rgb(161, 151, 143);
+  border-radius: 50px;
+  padding: 40px 40px;
+}
+
+.table__wrapper {
+  background-color: #a6ffb5;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .profile__wrapper {
+    flex-direction: column;
+  }
+}
